@@ -1,8 +1,9 @@
-#Book My Show App
+# Book My Show App
+
 This is a Book My Show web application built using React. It allows users to browse and book movie tickets.
 
-#Installation
-To run the application on your local machine, please follow the below steps:
+# Installation
+#### To run the application on your local machine, please follow the below steps:
 
 Clone the repository to your local machine using the command git clone https://github.com/your-username/book-my-show.git.
 Navigate to the project directory using the command cd book-my-show.
@@ -18,8 +19,8 @@ View movie details, including trailers, synopsis, and reviews.
 Book movie tickets for a particular showtime at a chosen theatre.
 Add movies to their favourites list for future reference.
 View their booking history.
-Dependencies
-The Book My Show web application is built using the following dependencies:
+# Dependencies
+##### The Book My Show web application is built using the following dependencies:
 
 React: A JavaScript library for building user interfaces.
 React Router: A collection of navigational components that compose declaratively with a user's application.
