@@ -1,7 +1,7 @@
-Book My Show App
+#Book My Show App
 This is a Book My Show web application built using React. It allows users to browse and book movie tickets.
 
-Installation
+#Installation
 To run the application on your local machine, please follow the below steps:
 
 Clone the repository to your local machine using the command git clone https://github.com/your-username/book-my-show.git.
