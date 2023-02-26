@@ -1,6 +1,7 @@
 import React , {useState} from 'react'
 import HeroSlider from 'react-slick';
-
+import { nextArrow } from './Arrows';
+import { prevArrow } from './Arrows';
 const HeroCarousel = () => {
   const [images,setImages] =useState([
   {
@@ -44,10 +45,29 @@ const HeroCarousel = () => {
     "vote_count": 3538
   }
 ]);
+
+  const settingsLg = {
+        arrows : true,
+        infinite : true,
+        speed : 500,
+        slideToscroll : 1,
+        prevArrow : <prevArrow/>,
+        nextArrow : <nextArrow/>,
+  }
+
+  const settings ={
+    arrows : true,
+    infinite : true,
+    speed : 500,
+    slideToscroll : 1,
+    prevArrow : <prevArrow/>,
+    nextArrow : <nextArrow/>,
+  }
+
   return (
     <>
       <div className='lg:hidden'>
-        <HeroSlider>
+        <HeroSlider {...settings}>
           {
             images.map((images)=>(
               <div className='w-full h-56 md:h-80 py-3'>
@@ -61,7 +81,7 @@ const HeroCarousel = () => {
         </HeroSlider>
       </div>
       <div className='hidden lg:block'>
-      <HeroSlider>
+      <HeroSlider {...settingsLg}>
           {
             images.map((images)=>(
               <div className='w-full h-96 px-2 py-3'>
